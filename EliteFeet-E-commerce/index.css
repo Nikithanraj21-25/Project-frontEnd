@@ -1,0 +1,552 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+   position: relative;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav h1 {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    margin-left: 60%;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 2px;
+}
+
+nav ul li i{
+    font-size: 18px;
+}
+
+nav ul li a {
+    color: gray;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+.main-header {
+    width: 75%;
+    margin: auto;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.main-header h5 {
+    font-size: 55px;
+    color: gray;
+    font-weight: 550;
+}
+
+.main-header h2 {
+    font-size: 30px;
+    width: 340px;
+    /* margin-top: 10px; */
+    margin-bottom: 24px;
+}
+
+.main-header p {
+    margin-bottom: 60px;
+}
+
+.main-header .btn {
+    background: black;
+    border: 1px solid gray;
+    font-size: 24px;
+    color: white;
+    font-weight: 400;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: all .5s;
+    margin-top: 40px;
+}
+
+.main-header img {
+    max-width: 100%;
+    height: auto;
+}
+.main-header img.main-image {
+    margin-right: 70%;
+    width: 40%; /* Adjust this value as needed */
+    height: auto;
+    max-width: 80%; /* Ensures the image is responsive */
+    display: block;
+    margin: 0 auto; /* Centers the image */
+}
+
+.bar, .bar-items{
+    display: none;
+}
+
+.products-container-screen{
+    display: none;
+  }
+
+
+/* ==================Search-bar===================== */
+
+.search-bar{
+    position : absolute;
+    height: 50%;
+    width: 40%;
+    background-color: rgb(239, 237, 237);
+    top:25%;
+    left:12%;   
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar input{
+    width:100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;   
+    border-radius: 5px;
+    padding-left: 10px;
+    outline: none;
+}
+
+
+/* ==============Products Container==================== */
+
+.products-container{
+    /* display: flex; */
+    background-color: black;
+    width:max-content;
+    height: 200px;
+    padding: 20px;
+    margin-top: 10px;
+    column-gap: 40px;
+    position: absolute;
+    right: 5%;
+    top:68%;
+    display: none;
+}
+
+.products-container a{
+    color: white;
+    text-decoration: none;
+}
+
+.products-container a:hover{
+    border-bottom: 2px solid white;
+}
+
+.products-container h3{
+    margin-bottom: 10px;
+}
+
+/* .products-container-screen{
+    display: none;
+  } */
+
+.puma-a, .redTape-a, .bata-a{
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* ============filter=================== */
+
+.filter{
+    height : 100%;
+    width : 300px;
+    background-color: white;
+    padding: 20px;
+    /* margin-top: 3%; */
+    /* position: absolute; */
+    position: fixed;
+    border-right: 2px solid;
+    padding-top: 4%;
+    /* top:9.4%; */
+}
+
+.filter h3{
+    font-weight:bolder;
+}
+
+/* ===========filter-categories================= */
+
+.filter-collections p{
+    display: inline-block;
+    font-weight: 600;
+    vertical-align: 1.5px;
+    margin-top: 15px;
+}
+
+/* ========filter-size============= */
+
+.filter-sizesInBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-right: 35%;
+    cursor: pointer;
+}
+
+.filter-sizesInBox button{
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 7px;
+    text-align: center;
+    /* flex-basis: 30%; */
+    margin-right: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+    font-weight: 600;
+}
+
+/* =================filter-prize==================== */
+
+.filter-price{
+    margin-top: 10%;
+}
+
+.wrapper {
+    width: 60%;
+    /* height: 100vh; */
+    background-color: white;
+    position: relative;
+    /* padding: 50px 40px 20px 40px; */
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    height: 30px; 
+    margin-top: 5px;
+    margin-bottom: 20%;
+  }
+
+  input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    position: absolute;
+    outline: none;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    margin: auto;
+    pointer-events: none;
+  }
+
+  .slider-track {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    top: 0;
+    border-radius: 5px;
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 5px;
+  }
+
+  input[type="range"]::-moz-range-track {
+    -moz-appearance: none;
+    height: 5px;
+  }
+
+  input[type="range"]::-ms-track {
+    appearance: none;
+    height: 5px;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: -2px;
+    pointer-events: auto;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: black;
+    pointer-events: auto;
+  }
+
+  input[type="range"]::-ms-thumb {
+    appearance: none;
+    height: 1.7em;
+    width: 1.7em;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: black;
+    pointer-events: auto;
+  }
+
+  input[type="range"]:active::-webkit-slider-thumb {
+    background-color: black;
+  }
+
+  .values {
+    background-color: black;
+    width: 30%;
+    position: relative;
+    margin-top: 5%;
+    padding: 5px 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 10px;
+    color: white;
+    left:35% ;
+  }
+  
+  .values:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-top: 7px solid black;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    margin: auto;
+    bottom: -6px;
+    left: 0;
+    right: 0;
+  }
+
+  @media screen and (max-width:1400px) {
+    nav .main-ul {
+        display: none;
+    }
+
+    nav {
+        /* background-color: black;
+        color: white; */
+        /* padding: 10px; */
+        /* text-align: center; */
+        padding: 10px;
+        text-align: start;
+    }
+
+    nav h1 {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    
+    
+    /* ========main-header============ */
+
+  /* bar, bar-item at last */
+    .main-header {
+        width: 90%;
+        background-size: auto ; 
+    }
+    
+    .main-header h5 {
+        font-size:40px;
+    }
+    
+    .main-header h2 {
+        font-size: 20px;
+    }
+    
+    .main-header p {
+        margin-bottom: 40px;
+        width: 80%;
+    }
+    
+    .main-header .btn {
+        font-size: 15px;
+        padding: 5px 15px;
+        border-radius: 45px;
+    }
+    
+    .main-header img {
+        height: 500px;
+    }
+
+    .main-header img.main-image {
+        height: 210px;
+    }
+
+    .bar{
+        display: inline-block;
+        position: absolute;
+        right: 3%;
+        top: 30%;
+        cursor: pointer;
+    }
+
+    .bar-items{
+        position: absolute;
+        /* display: flex; */
+        flex-direction: column;
+        background-color: black;
+        color: white;
+        right: -30%;
+        top: 100%;
+        width: 10%;
+        flex-basis: 90%;
+        align-items: center;
+        row-gap: 10px;
+        padding: 10px;
+        transition: .5s;
+        display: none;
+    }
+
+    .close-symbol{
+        position: absolute;
+        font-size: 15px;
+        right: 10%;
+        top: -10%;
+        cursor: pointer;
+    }
+
+    .products-container-screen{
+        position: absolute;
+        background-color: #ececec;
+        padding: 10px;
+        top: 100%;
+        right: -30%;
+        transition: .5s;
+      }
+    
+      .products-container-screen a{
+        text-decoration: none;
+        /* color: black; */
+      }
+    
+      .products-container-screen h3{
+        color: darkolivegreen;
+      }
+    
+      /* .products-container-screen{
+        display: block;
+      } */
+    
+      .puma-a, .bata-a, .redTape-a{
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+      }
+    
+      .puma,.bata,.redTape{
+        margin-bottom: 15px;
+      }
+    
+      .close-symbol-pcs{
+        position: absolute;
+        color: black;
+        right: 5%;
+        top : 2%;
+        cursor: pointer;
+      }    
+
+    /* =========search-bar=========== */
+
+    .search-bar{
+        /* margin-left: 10%;
+        padding: 3.2px;
+        margin-top: -4px ; */
+        left: 25%;
+        height: 60%;
+        top: 20%;
+        
+    }
+}
+
+@media screen and (max-width:650px) {
+  
+    .search-bar{
+      /* display: none; */
+      left:40%;
+    }
+  
+    .nav h1 {
+      display: inline-block;
+      margin-left: 40px;
+    } 
+
+    .main-header{
+        flex-direction: column;
+        flex-basis: 40%;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+    }
+
+    .main-header h5,.main-header h2,.main-header p{
+      padding-left: 30px;
+    }
+
+    .main-header .btn{
+      margin-left: 30px;
+    }
+
+    .header{
+        z-index: 1;
+    }
+
+    .main-header img {
+        max-width: 100%;
+        height: auto;
+    }
+    .main-header img.main-image {
+        /* margin-right: 70%; */
+        width: 100%; /* Adjust this value as needed */
+        height: 50%;
+        max-width: 100%; /* Ensures the image is responsive */
+        display: block;
+        margin: 0px ; /* Centers the image */
+        position: absolute;
+
+    }
+
+    .bar-items{
+      width: 20%;
+    }
+
+    /* .products-container-screen{
+        display: block;
+      } */
+  }
+
+  @media screen and (max-width:400px) {
+    .bar-items{
+      width: 25%;
+    }
+    
+  }

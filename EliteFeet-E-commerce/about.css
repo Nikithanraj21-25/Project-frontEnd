@@ -1,0 +1,102 @@
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+nav {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav h1 {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    margin-left: 60%;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 2px;
+}
+
+nav ul li i{
+    font-size: 18px;
+}
+
+nav ul li a {
+    color: gray;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    /* text-align: justify; */
+}
+h1 h2 h3{
+    color: #333;
+}
+.intro,.team,.collaborative,.cta{
+    margin-bottom: 40px;
+    text-align: justify;
+}
+.team-member{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.team-photo{
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+nav{
+    display: flex;
+    flex-basis: 50%;
+    justify-content: space-between;
+}
+
+nav ul{
+    margin: 25px;
+}
+
+@media screen and (max-width:900px) {
+
+.intro,.team,.collaborative,.cta{ 
+      text-align: justify;
+}
+
+nav{
+    display: flex;
+    flex-basis: 50%;
+    justify-content: space-around;
+}
+
+nav ul{
+    margin-top: 25px;
+}
+
+}
+

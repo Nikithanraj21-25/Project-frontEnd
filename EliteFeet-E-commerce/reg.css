@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height : 100vh;
+    background-color: black#f4f4f4;
+}
+
+.Reg_container{
+    background-color: gray;
+    width : 420px;
+    border-radius: 12px;
+    padding: 30px 40px;
+}
+
+.Reg_container h1{
+    text-align: center;
+}
+
+.Reg_username, .set_password{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    /* background-color: white; */
+    margin: 30px 0px;
+}
+
+.Reg_username input, .set_password input,.confirm-password input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255,255,255,.9);
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px ;
+}
+
+.Reg_username input::placeholder, .set_password input::placeholder{
+    color: black;
+}
+
+.Reg_username i, .set_password i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+}
+
+.login_container {
+    display: flex;
+    justify-content: space-between;
+    font-size:14.5px;
+    margin: -15px 0 15px;
+}
+
+.confirm-forgot label input{
+    accent-color: black;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: gray;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.Reg_container .btn{
+    width: 100%;
+    height:45px;
+    background-color: gray;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.Login-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link p a{
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-link p a:hover{
+    text-decoration: none;
+}

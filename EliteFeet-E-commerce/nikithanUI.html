@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fav Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Remix Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+    />
+
+    <!-- <link rel="stylesheet" href="/style.css" /> -->
+  </head>
+  <body>
+    <!-- ==========Nav Bar=============== -->
+    <header class="header" id="header">
+      <nav class="nav_container">
+        <div class="category">
+          <a href="#">CATEGORY</a>
+          <div class="category_lists">
+            <h3>Footwear</h3>
+            <ul>
+              <a href=""><li>Casual Shoes</li> </a>
+              <a href=""><li>Sports Shoes</li></a>
+              <a href=""><li>Formal Shoes</li></a>
+              <a href=""><li>Sneakers</li></a>
+              <a href=""><li>Sandals</li></a>
+              <a href=""><li>Floaters</li></a>
+              <a href=""><li>Flip Flops</li></a>
+            </ul>
+          </div>
+        </div>
+        <div class="search_bar">
+          <input type="text" placeholder="search" class="input" />
+        </div>
+        <div class="icons">
+          <a href="" class="icon whistlist"
+            ><i class="fa-solid fa-heart"></i
+          ></a>
+          <a href="" class="icon cart"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <div class="profile-wrapper">
+            <a href="" class="icon profile"><i class="fa-solid fa-user"></i></a>
+            <div class="profile_container">
+              <div class="profile_logo">
+                <span class="profile_logo-circle">U</span>
+                <span class="profile_logo-name">Unknown</span>
+              </div>
+
+              <ul class="profile_items">
+                <a href="" class="profile_item orders"><li>Orders</li></a>
+                <a href="" class="profile_item coupons"><li>Coupons</li></a>
+                <a href="" class="profile_item contact_us"
+                  ><li>Conatact us</li></a
+                >
+                <a href="" class="profile_item login-signup"
+                  ><li>Login/SignUp</li></a
+                >
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ==============filter========================= -->
+    <main class="main">
+      <section class="filter">
+        <h2 class="filter-sh headline-1">BRAND</h2>
+        <div class="filter-brand_names">
+          <input type="checkbox" name="brand" value="Sparx(435)" />
+          <p>Sparx(435)</p>
+          <br />
+          <input type="checkbox" name="brand" value="Metro(390)" />
+          <p>Metro(390)</p>
+          <br />
+          <input type="checkbox" name="brand" value="Mochi(332)" />
+          <p>Mochi(332)</p>
+          <br />
+          <input type="checkbox" name="brand" value="Birkenstock(254)" />
+          <p>Birkenstock(254)</p>
+          <br />
+          <input type="checkbox" name="brand" value="Roadster(328)" />
+          <p>Roadster(328)</p>
+          <br />
+          <input type="checkbox" name="brand" value="FAUSTO(189)" />
+          <p>FAUSTO(189)</p>
+          <br />
+          <input type="checkbox" name="brand" value="Campus(189)" />
+          <p>Campus(189)</p>
+          <br />
+          <input type="checkbox" name="brand" value="Khadims(182)" />
+          <p>Khadims(182)</p>
+          <br />
+        </div>
+
+        <h2 class="filter-sh headline-2">SIZE</h2>
+
+        <div class="filter-sizes">
+          <input type="checkbox" name="size" value="6" />
+          <p>Size 6</p>
+          <br />
+          <input type="checkbox" name="size" value="7" />
+          <p>Size 7</p>
+          <br />
+          <input type="checkbox" name="size" value="8" />
+          <p>Size 8</p>
+          <br />
+          <input type="checkbox" name="size" value="9" />
+          <p>Size 9</p>
+          <br />
+          <input type="checkbox" name="size" value="10" />
+          <p>Size 10</p>
+          <br />
+          <input type="checkbox" name="size" value="11" />
+          <p>Size 11</p>
+          <br />
+        </div>
+        <h2 class="filter-sh headline-3">PRICE</h2>
+        <div class="filter-prices">
+          <input type="checkbox" name="price" value="0-50" />
+          <p>$0 - $50</p>
+          <br />
+          <input type="checkbox" name="price" value="51-100" />
+          <p>$0 - $50</p>
+          <br />
+          <input type="checkbox" name="price" value="101-150" />
+          <p>$0 - $50</p>
+          <br />
+          <input type="checkbox" name="price" value="151-200" />
+          <p>$0 - $50</p>
+          <br />
+        </div>
+      </section>
+    </main>
+
+    <!-- ================Login page==================== -->
+    <div class="login_container">
+      <form action="">
+        <h1>Login</h1>
+        <div class="login_username">
+          <input type="text" placeholder="Username" required />
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="login_password">
+          <input type="password" placeholder="Password" required />
+          <i class="fa-solid fa-lock"></i>
+        </div>
+        <div class="remember-forgot">
+          <label for=""><input type="checkbox" />Remember Me</label>
+          <a href="#">Forgot Password</a>
+        </div>
+        <button class="btn">Login</button>
+        <div class="register-link">
+          <p>Don't have an account?<a href="#">Register</a></p>
+        </div>
+      </form>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
